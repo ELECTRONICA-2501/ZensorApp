@@ -5,17 +5,70 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_zen"
     tools:context=".DashboardPhaseListActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_margin="8dp"
-        android:id="@+id/recycler_view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBaseline_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Zensor App! Please choose an option below."
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
 
+    <Button
+        android:id="@+id/startSessionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Training Session"
+        app:layout_constraintTop_toBottomOf="@id/welcomeMessage"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <TextView
+        android:id="@+id/trainingSessionDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The training session is to start data collection for our ML model."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/startSessionButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <Button
+        android:id="@+id/startMeditationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Meditation Session"
+        app:layout_constraintTop_toBottomOf="@id/trainingSessionDescription"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <TextView
+        android:id="@+id/meditationSessionDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The meditation session is for after when the user has provided sufficient amount of data and can use this session."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/startMeditationButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

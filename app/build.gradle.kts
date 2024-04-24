@@ -34,30 +34,40 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
 
+    // Firebase BOM
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
-    androidTestImplementation(libs.espresso.core)
 
-    implementation("com.google.firebase:firebase-analytics")
+    // Firebase Analytics
+    implementation("com.google.firebase:firebase-analytics-ktx")
 
-    //firestore
-    implementation("com.google.firebase:firebase-firestore")
+    //Firebase Storage
+    implementation("com.google.firebase:firebase-storage-ktx")
 
-    //firebase auth
+
+
+    // Firebase Firestore
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Firebase Authentication
     implementation("com.google.firebase:firebase-auth")
 
-    //firebase storage
-    implementation("com.google.firebase:firebase-storage")
+    // Firebase Realtime Database
+    implementation("com.google.firebase:firebase-database-ktx")
 
-    //Glide for image loading
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
-    // Glide's annotation processor (used in the Glide module)
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
+    // Optional: Firebase Functions
+    implementation("com.google.firebase:firebase-functions-ktx")
+
+    // Glide for image loading
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
+
+    androidTestImplementation(libs.espresso.core)
 }

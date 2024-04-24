@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "571492914352",
+    "firebase_url": "https://pmd-android-app-default-rtdb.firebaseio.com",
     "project_id": "pmd-android-app",
     "storage_bucket": "pmd-android-app.appspot.com"
   },

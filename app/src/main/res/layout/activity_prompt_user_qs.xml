@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_zen"
+    tools:context=".PromptUserQs">
+
+    <TextView
+        android:id="@+id/sensorDataTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor Data"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/bpmData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BPM: --"
+        app:layout_constraintTop_toBottomOf="@id/sensorDataTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/oxygenData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Blood Oxygen: --"
+        app:layout_constraintTop_toBottomOf="@id/bpmData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/perspirationData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Perspiration: --"
+        app:layout_constraintTop_toBottomOf="@id/oxygenData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Emotional State Poll -->
+    <TextView
+        android:id="@+id/emotionPollTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Select Your Current Emotional State:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toBottomOf="@id/perspirationData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/emotionGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/emotionPollTitle"
+        app:layout_constraintStart_toStartOf="@id/emotionPollTitle">
+
+        <RadioButton
+            android:id="@+id/radioStress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stress"/>
+
+        <RadioButton
+            android:id="@+id/radioAnxiety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anxiety"/>
+
+        <RadioButton
+            android:id="@+id/radioFear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fear"/>
+
+        <RadioButton
+            android:id="@+id/radioSadness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sadness"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/emotionGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
