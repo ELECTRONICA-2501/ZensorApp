@@ -35,14 +35,16 @@ public class DashboardPhaseListActivity extends AppCompatActivity {
         startMeditationSessionButton.setOnClickListener(v -> {
             Toast.makeText(this, "Session started!", Toast.LENGTH_SHORT).show();
             // Navigate to PromptUserQs activity to handle session functionality
-            Intent intent = new Intent(DashboardPhaseListActivity.this, PromptUserQs.class);
+            Intent intent = new Intent(DashboardPhaseListActivity.this, MeditationSessionActivity.class);
             startActivity(intent);
         });
+
+        //takes you to promptUserQs activity
         startTrainingSessionButton = findViewById(R.id.startSessionButton);
         startTrainingSessionButton.setOnClickListener(v -> {
             Toast.makeText(this, "Session started!", Toast.LENGTH_SHORT).show();
             // Navigate to PromptUserQs activity to handle session functionality
-            Intent intent = new Intent(DashboardPhaseListActivity.this, MeditationSessionActivity.class);
+            Intent intent = new Intent(DashboardPhaseListActivity.this, PromptUserQs.class);
             startActivity(intent);
         });
     }
