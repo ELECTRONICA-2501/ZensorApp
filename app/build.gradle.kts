@@ -61,6 +61,7 @@ dependencies {
 
     // Firebase Realtime Database
     implementation("com.google.firebase:firebase-database-ktx")
+    implementation("com.google.firebase:firebase-database")
 
     // Optional: Firebase Functions
     implementation("com.google.firebase:firebase-functions-ktx")
