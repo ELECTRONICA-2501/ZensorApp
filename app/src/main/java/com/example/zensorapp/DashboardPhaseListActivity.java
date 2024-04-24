@@ -1,39 +1,3 @@
-//package com.example.zensorapp;
-//
-//import android.content.Intent;
-//import android.os.Bundle;
-//import android.widget.Button;
-//import androidx.appcompat.app.AppCompatActivity;
-//
-//public class DashboardPhaseListActivity extends AppCompatActivity {
-//
-//    private Button startTrainingSessionButton;
-//    private Button startMeditationSessionButton;
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_dashboard_phase_list);
-//
-//        startTrainingSessionButton = findViewById(R.id.startSessionButton);
-//        startMeditationSessionButton = findViewById(R.id.startMeditationButton);
-//
-//        startTrainingSessionButton.setOnClickListener(v -> {
-//            Intent intent = new Intent(DashboardPhaseListActivity.this, PromptUserQs.class);
-//            startActivity(intent);
-//        });
-//
-//        startMeditationSessionButton.setOnClickListener(v -> {
-//            Intent intent = new Intent(DashboardPhaseListActivity.this, MeditationSessionActivity.class);
-//            startActivity(intent);
-//        });
-//    }
-//}
-
-
-
-
-
 package com.example.zensorapp;
 import android.content.Intent;
 import android.os.Bundle;
