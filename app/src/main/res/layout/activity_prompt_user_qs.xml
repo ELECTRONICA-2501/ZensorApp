@@ -29,19 +29,24 @@
                 android:id="@+id/bpmDataView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BPM: --" />
+                android:text="BPM: --"
+                android:textStyle="bold"
+                android:textSize="35dp"/>
 
             <TextView
                 android:id="@+id/oxygenDataView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Blood Oxygen: --" />
-
+                android:text="Blood Oxygen: --"
+                android:textStyle="bold"
+                android:textSize="35dp"/>
             <TextView
                 android:id="@+id/perspirationDataView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Perspiration: --" />
+                android:text="Perspiration: --"
+                android:textStyle="bold"
+                android:textSize="35dp"/>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
