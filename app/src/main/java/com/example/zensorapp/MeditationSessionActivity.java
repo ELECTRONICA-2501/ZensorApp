@@ -23,23 +23,23 @@ public class MeditationSessionActivity extends AppCompatActivity {
         bpmDataView = findViewById(R.id.bpmDataView);
         oxygenDataView = findViewById(R.id.oxygenDataView);
         perspirationDataView = findViewById(R.id.perspirationDataView);
-        emotionStateView = findViewById(R.id.emotionStateView); // Make sure this ID exists in your XML
+        //emotionStateView = findViewById(R.id.emotionStateView); // Make sure this ID exists in your XML
 
         // Reference to your Firebase path to the mock data
-        DatabaseReference mockDataRef = FirebaseDatabase.getInstance().getReference().child("mock_data");
+        DatabaseReference mockDataRef = FirebaseDatabase.getInstance().getReference().child("sensor_data");
 
         // Attach a listener to read the data
         mockDataRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    String emotionState = snapshot.child("Emotion State").getValue(String.class);
+                    //String emotionState = snapshot.child("Emotion State").getValue(String.class);
                     Double heartRate = snapshot.child("Heart Rate").getValue(Double.class);
                     Double oxygenLevel = snapshot.child("Oxygen Level").getValue(Double.class);
                     Double perspiration = snapshot.child("Perspiration").getValue(Double.class);
 
                     // Update the TextViews with the data
-                    emotionStateView.setText("Emotion State: " + emotionState);
+                    //emotionStateView.setText("Emotion State: " + emotionState);
                     bpmDataView.setText("Heart Rate: " + formatDouble(heartRate));
                     oxygenDataView.setText("Oxygen Level: " + formatDouble(oxygenLevel));
                     perspirationDataView.setText("Perspiration: " + formatDouble(perspiration));
