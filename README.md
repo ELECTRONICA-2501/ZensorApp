@@ -6,6 +6,15 @@
 **Course:** ECE 441 Spring 2024  
 
 ---
+# This Project Was Built With:
+
+* [![Arduino][Arduino-shield]][Arduino-url]
+* [![Raspberry Pi][RaspberryPi-shield]][RaspberryPi-url]
+* [![Firebase][Firebase-shield]][Firebase-url]
+* [![Python][Python-shield]][Python-url]
+* [![Android Studio][AndroidStudio-shield]][AndroidStudio-url]
+* [![Machine Learning][MachineLearning-shield]][MachineLearning-url]
+* [![Bluetooth][Bluetooth-shield]][Bluetooth-url]
 
 ## Overview
 
@@ -104,4 +113,30 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 For more information, please visit our [GitHub Repository](https://github.com/ELECTRONICA-2501/ZensorApp).
+
+
+
+<!-- MD Links & Images -->
+
+[Arduino-shield]: https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white
+[Arduino-url]: https://www.arduino.cc/
+
+[RaspberryPi-shield]: https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberry-pi&logoColor=white
+[RaspberryPi-url]: https://www.raspberrypi.org/
+
+[Firebase-shield]: https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34
+[Firebase-url]: https://firebase.google.com/
+
+[Python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://www.python.org/
+
+[AndroidStudio-shield]: https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white
+[AndroidStudio-url]: https://developer.android.com/studio
+
+[MachineLearning-shield]: https://img.shields.io/badge/Machine%20Learning-FF6F00?style=for-the-badge&logo=ml&logoColor=white
+[MachineLearning-url]: https://scikit-learn.org/
+
+[Bluetooth-shield]: https://img.shields.io/badge/Bluetooth-0082FC?style=for-the-badge&logo=bluetooth&logoColor=white
+[Bluetooth-url]: https://www.bluetooth.com/
+
 
