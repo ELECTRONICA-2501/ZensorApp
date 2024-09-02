@@ -1,55 +1,107 @@
-# ZensorApp
+# Zensor - Personalized Meditation Device
 
-ZensorApp is an Android application designed to monitor and record users' emotional states and physiological data. The app integrates with Firebase for authentication and data storage, allowing users to sign up, log in, and record their emotional states along with sensor data such as heart rate, oxygen level, and perspiration.
+**Team Members:** Salvador Jimenez, YoungJo Choi, Fayez Ghosein, Bhuvanesh Rajagopal  
+**Instructor:** Dr. Jafar Saniie  
+**Teaching Assistants:** Xinrui Yu, Mikhail Gromov  
+**Course:** ECE 441 Spring 2024  
 
-## Features
+---
 
-- User Authentication (Sign Up and Log In)
-- Record and store emotional states
-- Monitor and display physiological data
-- Firebase integration for real-time data storage and retrieval
+## Overview
 
-## Getting Started
+Zensor is a personalized meditation device designed to help users manage their emotional well-being. The device uses bio-data to predict the user's emotional state and provides customized meditation sessions to help users overcome negative emotions.
+
+### Key Features
+- **Emotion Prediction:** Uses sensors to collect bio-data and predicts the user's emotional state using a machine learning model.
+- **Personalized Meditation:** Based on the predicted emotion, the device provides a tailored meditation session.
+- **Real-Time Feedback:** The device continuously monitors and updates the user's emotional state, ensuring a responsive meditation experience.
+- **Customizable Platform:** Built with Arduino and Raspberry Pi, allowing for further customization by users and developers.
+
+## Technical Overview
+
+### Hardware Components
+- **Sensors:** MAX30102 Pulse Oximeter and Grove GSR Sensor for collecting biometric data.
+- **Microcontrollers:** Arduino Pro Mini and Raspberry Pi for processing and transmitting data.
+- **Communication:** HC-06 Bluetooth module for data transmission between devices.
+- **Housing:** 3D printed casing designed to comfortably fit all hardware components.
+
+### Software Components
+- **Meditation Algorithm:** Machine learning model (Decision Tree) trained on biometric data to predict emotional states.
+- **Firebase Integration:** Used for real-time data storage and user authentication.
+- **Android Application:** User interface for starting meditation sessions, viewing data, and managing user accounts.
+
+## Team Contributions
+
+- **Salvador Jimenez:** Led software and mobile application development, designed the meditation algorithm, and developed the connection between Firebase and the device.
+- **YoungJo Choi:** Developed the machine learning model, performed research on various algorithms, and integrated the ML functionality with Firebase and the Android application.
+- **Fayez Ghosein:** Co-lead on hardware development, responsible for soldering and wiring components, and designing and printing the 3D housing.
+- **Bhuvanesh Rajagopal:** Co-lead on hardware development, developed firmware for Arduino and Raspberry Pi, and assisted with Android application testing and debugging.
+
+## Installation and Setup
 
 ### Prerequisites
+- Arduino IDE
+- Python 3.x
+- Firebase Account and Project Setup
+- Android Studio for the mobile app
 
-- Android Studio
-- Firebase account
-- Basic knowledge of Android development and Firebase
+### Steps to Set Up
 
-### Installation
+1. **Hardware Setup:**
+   - Assemble the sensors (MAX30102 and Grove GSR) and microcontrollers (Arduino Pro Mini and Raspberry Pi) as per the provided circuit diagram.
+   - Ensure all components are securely fitted into the 3D-printed housing.
 
-1. **Clone the repository:**
+2. **Software Setup:**
+   - Clone the repository:
+     ```bash
+     git clone https://github.com/ELECTRONICA-2501/ZensorApp.git
+     cd ZensorApp
+     ```
+   - Install the required Python libraries:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Set up Firebase:
+     - Generate and download a Firebase private key JSON file and place it in the project directory.
+     - Update the Firebase configuration in the Python scripts and Android app with your project's credentials.
 
-    ```sh
-    git clone https://github.com/yourusername/zensorapp.git
-    cd zensorapp
-    ```
+3. **Running the Device:**
+   - Upload the Arduino firmware to the Arduino Pro Mini.
+   - Run the Python scripts on the Raspberry Pi to handle data collection and transmission to Firebase.
 
-2. **Open the project in Android Studio:**
+4. **Using the Android App:**
+   - Open the Android project in Android Studio.
+   - Build and run the app on a connected Android device.
+   - Log in or create an account to start using the meditation device.
 
-    - Launch Android Studio
-    - Select `Open an existing Android Studio project`
-    - Navigate to the cloned repository and select it
+## Usage
 
-3. **Set up Firebase:**
+1. **Starting a Training Session:**
+   - Select the "Start Training Session" button on the app dashboard.
+   - Follow the prompts to input your current emotional state while the device collects bio-data.
 
-    - Go to the [Firebase Console](https://console.firebase.google.com/)
-    - Create a new project or use an existing one
-    - Add an Android app to your Firebase project
-    - Register your app with the package name `com.example.zensorapp`
-    - Download the `google-services.json` file and place it in the `app` directory of your project
-    - Follow the instructions to add Firebase SDK to your project
+2. **Starting a Meditation Session:**
+   - Select the "Start Meditation Session" button.
+   - The device will automatically predict your emotional state and provide a guided meditation session.
 
-4. **Build and run the project:**
+3. **Viewing Results:**
+   - Access real-time data and meditation history directly from the app dashboard.
 
-    - Connect your Android device or start an emulator
-    - Click on the `Run` button in Android Studio
+## Future Work
 
-## Project Structure
+- **User Experience Improvements:** Direct communication between the Arduino Pro Mini and the Android app to eliminate the need for a Raspberry Pi.
+- **Advanced Sensors:** Incorporating EEG sensors for more accurate emotional state detection.
+- **Cross-Platform Support:** Expanding the app to iOS to reach a broader user base.
 
-### Main Activities
+## Acknowledgments
 
-#### SignUpActivity
+We would like to thank Dr. Jafar Saniie, Xinrui Yu, and Mikhail Gromov for their guidance and support throughout this project.
 
-Handles user registration and authentication.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+For more information, please visit our [GitHub Repository](https://github.com/ELECTRONICA-2501/ZensorApp).
+
