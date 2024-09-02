@@ -32,7 +32,7 @@ public class SignUpActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener authStateListener;
     private FirebaseUser currentUser;
 
-    // Firebase Firestore connection
+    // FAirebase Firestore connection
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private CollectionReference collectionReference = db.collection("Users");
 
