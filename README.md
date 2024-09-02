@@ -4,7 +4,8 @@
 **Instructor:** Dr. Jafar Saniie  
 **Teaching Assistants:** Xinrui Yu, Mikhail Gromov  
 **Course:** ECE 441 Spring 2024  
-![IIT Logo](ECE 441
+![Illinois Tech Logo](ECE%20441/IITLOGO.png)
+
 
 ---
 # This Project Was Built With:
@@ -27,18 +28,29 @@ Zensor is a personalized meditation device designed to help users manage their e
 - **Real-Time Feedback:** The device continuously monitors and updates the user's emotional state, ensuring a responsive meditation experience.
 - **Customizable Platform:** Built with Arduino and Raspberry Pi, allowing for further customization by users and developers.
 
-## Technical Overview
+## Big Picture Technical Overview
+![General System Overview](ECE%20441/GeneralSystemOverview.png)
+
+### Software Architecture
+- **Meditation Algorithm:** Machine learning model (Decision Tree) trained on biometric data to predict emotional states.
+  ![Baseline Transparent](ECE%20441/Copy%20of%20BaselineTransparent.png)
+  
+- **Firebase Integration:** Used for real-time data storage and user authentication.
+  ![User Process Flow Transparent](ECE%20441/UserProcFlowTransparent.png)
+
+- **Android Application:** User interface for starting meditation sessions, viewing data, and managing user accounts.
+  ![App UI](ECE%20441/AppUI.png)
 
 ### Hardware Architecture: 
 - **Sensors:** MAX30102 Pulse Oximeter and Grove GSR Sensor for collecting biometric data.
 - **Microcontrollers:** Arduino Pro Mini and Raspberry Pi for processing and transmitting data.
 - **Communication:** HC-06 Bluetooth module for data transmission between devices.
 - **Housing:** 3D printed casing designed to comfortably fit all hardware components.
+![Hardware Hand 1](ECE%20441/Hand1.png)
+![Sensor Breakdown Hand 2](ECE%20441/SensorBreakDownHand2.png)
+![Arduino BT Sensors Overview](ECE%20441/ArduinoBTSensorsOverview.png)
 
-### Software Components
-- **Meditation Algorithm:** Machine learning model (Decision Tree) trained on biometric data to predict emotional states.
-- **Firebase Integration:** Used for real-time data storage and user authentication.
-- **Android Application:** User interface for starting meditation sessions, viewing data, and managing user accounts.
+
 
 ## Team Contributions
 
