@@ -19,7 +19,7 @@ Zensor is a personalized meditation device designed to help users manage their e
 
 ## Technical Overview
 
-### Hardware Components
+### Hardware Architecture: 
 - **Sensors:** MAX30102 Pulse Oximeter and Grove GSR Sensor for collecting biometric data.
 - **Microcontrollers:** Arduino Pro Mini and Raspberry Pi for processing and transmitting data.
 - **Communication:** HC-06 Bluetooth module for data transmission between devices.
