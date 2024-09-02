@@ -35,10 +35,11 @@ Zensor is a personalized meditation device designed to help users manage their e
 ![General System Overview](ECE%20441/GeneralSystemOverview.png)
 
 ### Software Architecture
-- **Meditation Algorithm:** Machine learning model (Decision Tree) trained on biometric data to predict emotional states.
+- **Meditation Algorithm:** Machine learning model (Decision Tree) trained on biometric data to predict emotional states. The following **Diagrams represent 1st and 2nd Stages.**
+  #### Stage 1: User is prompted multiple times throughout the day to aggregate a large amount of data for our ML model.
   ![Baseline Transparent](ECE%20441/Copy%20of%20BaselineTransparent.png)
   
-- **Firebase Integration:** Used for real-time data storage and user authentication.
+  #### Stage 2: After we've collected a sufficient amount of data, the user can now just put on the device and the sensors will predict an emotion and return a tailored meditation practice to help them handle that emotion.
   ![User Process Flow Transparent](ECE%20441/UserProcFlowTransparent.png)
 
 - **Android Application:** User interface for starting meditation sessions, viewing data, and managing user accounts.
