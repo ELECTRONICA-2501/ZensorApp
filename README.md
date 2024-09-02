@@ -4,6 +4,7 @@
 **Instructor:** Dr. Jafar Saniie  
 **Teaching Assistants:** Xinrui Yu, Mikhail Gromov  
 **Course:** ECE 441 Spring 2024  
+![IIT Logo](ECE 441
 
 ---
 # This Project Was Built With:
