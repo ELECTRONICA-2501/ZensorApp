@@ -22,6 +22,9 @@
 
 Zensor is a personalized meditation device designed to help users manage their emotional well-being. The device uses bio-data to predict the user's emotional state and provides customized meditation sessions to help users overcome negative emotions.
 
+## Live Demo Video Link:
+[LOOM Video Demo](https://www.loom.com/share/299a1b1e04414c11861a4b76ba6212f2?sid=60bab68d-1b5e-46e7-a23c-9dedf14cfc5d)
+
 ### Key Features
 - **Emotion Prediction:** Uses sensors to collect bio-data and predicts the user's emotional state using a machine learning model.
 - **Personalized Meditation:** Based on the predicted emotion, the device provides a tailored meditation session.
