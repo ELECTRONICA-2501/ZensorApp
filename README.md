@@ -119,14 +119,10 @@ Zensor is a personalized meditation device designed to help users manage their e
 
 We would like to thank Dr. Jafar Saniie, Xinrui Yu, and Mikhail Gromov for their guidance and support throughout this project.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 For more information, please visit our [GitHub Repository](https://github.com/ELECTRONICA-2501/ZensorApp).
-
+As well as the IIT ECASP LAB webpage to see our feature work: [IIT ECASP Webpage](https://ecasp.ece.iit.edu/)
 
 
 <!-- MD Links & Images -->
